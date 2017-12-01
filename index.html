@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dario Fernandez Osuna</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="./favicon.ico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript">
+        var contexto;
+        var direccion;
+        var posicionojoi;
+        var posicionojod;
+        var posicionojoiy;
+        var posicionojody;
+        var contador;
+        var tamanoimg;
+        var ondea;
+        var direccionbandera;
+        window.onload = function() {
+            canvas = document.getElementById("canvas");
+            contexto = canvas.getContext("2d");
+            setInterval("dibujarnombre()",2);
+        }
+        
+        function dibujarnombre() {
+            //letra D
+            contexto.lineWidth = 4;
+            contexto.beginPath();;
+            contexto.moveTo(80,25);
+            contexto.lineTo(80,125);
+
+            contexto.moveTo(40,25);
+            contexto.quadraticCurveTo(250,125,40,115);
+
+            //leta a
+            contexto.moveTo(175,80);
+            contexto.quadraticCurveTo(210,50,218,90);
+            contexto.quadraticCurveTo(175,80,171,105);
+            contexto.quadraticCurveTo(175,130,218,105);
+            contexto.moveTo(218,90);
+            contexto.quadraticCurveTo(210,130,240,115);
+
+             //leta r
+            contexto.moveTo(270,122);
+            contexto.lineTo(270,65)
+            contexto.moveTo(270,90);
+            contexto.quadraticCurveTo(280,65,310,70);
+            //leta i
+            contexto.moveTo(340,70);
+            contexto.quadraticCurveTo(330,130,360,122);
+            contexto.moveTo(340,57);
+            contexto.lineTo(360,42);
+             //leta o
+            contexto.moveTo(398,70);
+            contexto.quadraticCurveTo(370,100,398,125);
+            contexto.quadraticCurveTo(415,130,430,125);
+            contexto.quadraticCurveTo(460,90,430,70);
+            contexto.quadraticCurveTo(410,60,398,70);
+            contexto.stroke();
+            contexto.closePath();
+            
+        }
+    </script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- Add your site or application content here -->
+        <header>
+            <h1>El Blog de</h1>
+            <canvas id="canvas" width="450" height="165">
+                Este texto se muestra para los navegadores no compatibles con canvas.
+                <br>
+                Por favor, utiliza Firefox, Chrome, Safari u Opera.
+            </canvas>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Formulario</a></li>
+                <li><a href="#">xxxxx</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <main>
+                <section class='flex'>
+                    <article>
+                        <img src="./img/articulo1.jpg" alt="">
+                        <header><h2>Qué hacer cuando aparece el mensaje "tu dispositivo no es compatible con esta versión"</h2></header>
+                        <div>
+                            <span>¿Por qué pasa este error?</span>
+                            <p>Como decíamos, la mitad de la confusión es por el modo en el que está redactado el error. Es un texto muy genérico y que puede dar a entender que le pasa algo a tu móvil, o a esa versión. ¿Mi dispositivo no es compatible con esta versión? ¿Pero es compatible con otra versión?</p>
+
+                            <p>Lo que quiere decir el texto es en verdad muy sencillo: el desarrollador ha especificado que el modelo de tu móvil o tablet no pueda descargarse la aplicación desde la tienda de Google. De igual modo, Google Play muestra un error al intentar descargar una aplicación bloqueada en el país de tu cuenta, aunque en este caso el error es bastante más claro: "Este elemento no está disponible en tu país".</p>
+                        </div>
+                        <footer>01/12/2017  1:29</footer>
+                    </article>
+                    <article>
+                        <img src="./img/articulo2.jpg" alt="">
+                        <header><h2>Google lanza Datally, una app para controlar los datos móviles que usamos en Android</h2></header>
+                        <div>
+                            <p>Datally se parece a muchas aplicaciones que hay para gestionar datos en Android: monitoriza en segundo plano todo lo que ocurre cuando no estamos con WiFi y nos va indicando cuánto consume cada app, tanto las que están funcionando delante nuestra como las que trabajan de fondo y no vemos a simple vista.</p>
+
+                            <p>El objetivo de esta app no pasa tanto por una monitorización a fondo sino por controlar todo lo que ocurre y poder tomar medidas al momento. En la primera configuración nos pedirá una serie de permisos para poder tener toda la información que necesita. Para hacerla funcionar, tan solo tenemos que esperar unos minutos y estar sin WiFi para ver cómo evoluciona el consumo de datos</p>
+                        </div>
+                        <footer>27/11/2017  12:40</footer>
+                    </article>
+                    <article>
+                        <img src="img/articulo3.jpg" alt="">
+                        <header><h2>Microsoft Edge para Android, ya está aquí su primera versión estable: estas son sus características </h2></header>
+                        <div>
+                            <p>Tras más de un mes en su fase de pruebas, hoy es el día en el que el navegador web Microsoft Edge lanza su primera versión estable para nuestros dispositivos móviles Android.</p>
+                            <p>Durante todas estas semanas, Microsoft Edge se ha ido puliendo corrigiendo todos esos pequeños fallos y añadiendo nuevas características para ofrecer un completo navegador web que va a por todas para convertirse en una alternativa más a Chrome, Firefox, Opera y cía.</p>
+                            <p>Microsoft Edge llega a Android principalmente para los usuarios de Windows 10, para que puedan usar el navegador web de Microsoft y disfrutar de su sincronización tanto en sus móviles como en su PC.</p>
+                            
+                        </div>
+                        <footer>24/11/2017  12:40</footer>
+                    </article>
+                    <article>
+                        <img src="img/articulo4.png" alt="">
+                        <header><h2>Baba's Palace: un juego de puzzles hecho para Amstrad en España llega a Android</h2></header>
+                        <div>
+                            <p>Rafael de Castillo, su creador junto a McKlain, nos explica cómo empezó toda la historia de este Baba's Palace: en España se celebra desde hace un tiempo una competición llamada CPCRetroDev donde entusiastas de Amstrad de cualquier lugar se ponen manos a la obra para hacer un juego que funcione en ese ordenador. Tanto el nivel como la participación son altos, en la edición de este año se presentaron 29 juegos completos.</p>
+                            <p>En esta competición, cuyo fallo se produjo el 12 de noviembre, salió victorioso la creación de Rafa. Babab's Palace es un juego de puzles donde tendremos que guiar a nuestra pareja protagonista por 100 niveles. El problema es que para desplazarnos y llegar a ellos habrá que moverse de manera precisa e interactuando con los objetos que hay a la vista.</p>
+                        </div>
+                        <footer>03/10/2017  12:40</footer>
+                    </article>
+                </section>
+            </main>
+            <aside>
+                <article>
+                    <header>
+                        <img src="./img/yo.png" id='filtro' alt="">
+                        <h2>Dario Fernandez Osuna</h2></header>
+                    <div>
+                        <p>Nacido en Madrid</p>
+                        <p>Tecnico en sistemas microinformaticos y redes y futuro desarrollador web</p>
+                        <p>He estudiado un grado medio y actualmente estoy cursando un grado superior de desarrollo web</p>
+                        <p>Tengo 24 años</p>
+                    </div>
+                    <footer>
+                        <ul>
+                            <li><a href="#"><img src="img/redes/github.svg" alt="Github"></a></li>
+                            <li><a href="#"><img src="img/redes/linkedin.svg" alt="Linkedin"></a></li>
+                            <li><a href="#"><img src="img/redes/twitter.svg" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="img/redes/wordpress.svg" alt="Wordpress"></a></li>
+                        </ul>
+                    </footer>
+                </article>
+            </aside>
+        </div>
+        <footer>
+            <header></header>
+            
+            <aside>
+                <ul>
+                    <li><a href="#"><img src="img/redes/github.svg" alt="Github"></a></li>
+                    <li><a href="#"><img src="img/redes/linkedin.svg" alt="Linkedin"></a></li>
+                    <li><a href="#"><img src="img/redes/twitter.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="img/redes/wordpress.svg" alt="Wordpress"></a></li>
+                </ul>
+            </aside>
+            <span>&copy; 2017 Dario Fernandez Osuna</span>
+        </footer>    
+        
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
